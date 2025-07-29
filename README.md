@@ -1,6 +1,13 @@
 # dotfiles
 dotfiles to be managed with GNU Stow
 
+# Functionality
+
+- Installs packages with apt
+- installs custom packages from git repositories (lazydocker, starship, tmux plugins)
+- enables and starts services
+- clones my dotfiles from [https://github.com/sascha-kirch/dotfiles](https://github.com/sascha-kirch/dotfiles) and stows them
+
 # Prequesites
 ## GNU Stow
 
@@ -25,4 +32,3 @@ if the file is already existing and you want to overwrite it, you can first deli
 ```bash
 stow -R <package> <package> ...
 ```
-
