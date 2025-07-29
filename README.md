@@ -1,12 +1,10 @@
 # dotfiles
 dotfiles to be managed with GNU Stow
 
-# Functionality
+# Note
 
-- Installs packages with apt
-- installs custom packages from git repositories (lazydocker, starship, tmux plugins)
-- enables and starts services
-- clones my dotfiles from [https://github.com/sascha-kirch/dotfiles](https://github.com/sascha-kirch/dotfiles) and stows them
+Also checkout my [linux-forgeup repository](https://github.com/sascha-kirch/linux-forgeup), a Linux System Tool to automate setup and configuration of my debian based linux distros.
+
 
 # Prequesites
 ## GNU Stow
