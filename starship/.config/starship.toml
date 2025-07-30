@@ -2,6 +2,7 @@
 
 format = """
 [](red)\
+$container\
 $os\
 $username\
 [](bg:peach fg:red)\
@@ -127,6 +128,11 @@ format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
+
+[container]
+symbol = ""
+style = "bg:red"
+format = '[[$symbol ](fg:crust bg:red)]($style)'
 
 [docker_context]
 symbol = ""
