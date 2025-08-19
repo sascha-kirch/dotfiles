@@ -30,3 +30,8 @@ if the file is already existing and you want to overwrite it, you can first deli
 ```bash
 stow -R <package> <package> ...
 ```
+
+# Where to put what?
+
+general extensions and configuration files within the ~/.bashrc.d directory contain things like aliases, functions, and other shell customizations.
+If a tool like starship also needs some configuration, it is placed in `starship/.bashrc.d/starship.sh`.
