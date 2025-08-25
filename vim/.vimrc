@@ -51,7 +51,7 @@ set number
 
 " Shows the current line as absolute number and the lines above and below
 " relative to current line
-" set relativenumber
+set relativenumber
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
