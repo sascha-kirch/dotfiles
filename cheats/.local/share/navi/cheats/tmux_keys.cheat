@@ -92,3 +92,9 @@ ctrl-b + x
 
 # Show all key-bindings
 ctrl-b + ?
+
+# Show time
+ctrl-b + t
+
+# Customize Options
+ctrl-b + C
