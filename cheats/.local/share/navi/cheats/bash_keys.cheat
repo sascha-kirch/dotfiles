@@ -1,4 +1,4 @@
-% bash-vi-mode, move
+% bash-vi-mode[move]
 
 
 # Move cursor to end of line.
@@ -28,7 +28,7 @@ f<character>
 # Press semi-colon to move to next occurrence of searched character.
 ;
 
-% bash-vi-mode, edit
+% bash-vi-mode[edit]
 
 # Delete single character under cursor.
 x

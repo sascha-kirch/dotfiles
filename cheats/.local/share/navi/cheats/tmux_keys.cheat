@@ -1,0 +1,94 @@
+% tmux[sessions]
+
+# Show all sessions
+ctrl-b + s
+
+# Rename sessions
+ctrl-b + $
+
+# Detach from session
+ctrl-b + d
+
+# Preview sessions and windows
+ctrl-b + w
+
+# Move to previous session
+ctrl-b + (
+
+# Move to next session
+ctrl-b + )
+
+
+% tmux[windows]
+
+# Create window
+ctrl-b + c
+
+# Rename current window
+ctrl-b + ,
+
+# Close current window
+ctrl-b + &
+
+# List windows
+ctrl-b + w
+
+# Previous window
+ctrl-b + p
+
+# Next window
+ctrl-b + n
+
+# Switch window by number
+ctrl-b + 0-9
+
+# Toggle last active window
+ctrl-b + l
+
+
+% tmux[panes]
+
+# Split current pane vertically
+ctrl-b + %
+
+# Split current pane horizontally
+ctrl-b + "
+
+# Move current pane left
+ctrl-b + {
+
+# Move current pane right
+ctrl-b + }
+
+# Switch pane in direction
+ctrl-b + ↑←↓→
+
+# Toggle pane layouts
+ctrl-b + space
+
+# Show pane numbers
+ctrl-b + q
+
+# Switch to pane number
+ctrl-b + q + 0..9
+
+# Toggle pane zoom
+ctrl-b + z
+
+# Convert pane into window
+ctrl-b + !
+
+# Resize pane. Hold ctrl, multiple strokes of arrows.
+ctrl-b + ↑←↓→
+
+# Resize pane by 5.
+ctrl-b + alt-↑←↓→
+
+# Close current pane
+ctrl-b + x
+
+
+% tmux[misc]
+
+# Show all key-bindings
+ctrl-b + ?
