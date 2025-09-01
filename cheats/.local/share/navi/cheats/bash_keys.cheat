@@ -1,7 +1,91 @@
-% bash, keys, vi
+% bash-vi-mode, move
 
-# $
-Move the cursor to the end of the line.
 
-# 0
-Move the cursor to the beginning of the line.
+# Move cursor to end of line.
+$
+
+# Move cursor to beginning of line.
+0
+
+# Move to next word using space character as delimiter.
+W
+
+# Move to next word or special character.
+w
+
+# Move back one word using space character as delimiter.
+B
+
+# Move back one word or special character.
+b
+
+# Move to first non-blank character at beginning of line.
+^
+
+# Find occurrence of next character.
+f<character>
+
+# Press semi-colon to move to next occurrence of searched character.
+;
+
+% bash-vi-mode, edit
+
+# Delete single character under cursor.
+x
+
+# Delete previous character.
+X
+
+# Enter insert mode at current cursor.
+I
+
+# Enter insert mode at the end of the line to append text.
+A
+
+# Change entire line.
+cc
+
+# Change text from cursor to end of line.
+C
+
+# Move cursor to end of word and enter insert mode.
+ea
+
+# Yank word under the cursor
+y
+
+# Yank from cursor to end of line.
+Y
+
+# Paste copied text.
+p or P
+
+# Replace single character under the cursor.
+r
+
+# Repeat last command.
+.
+
+# Undo last command.
+u
+
+# Toggle case of letter under the cursor.
+~
+
+# Delete line.
+dd
+
+# Delete word under cursor.
+dw
+
+# Delete three words.
+d3w
+
+# Change 2 words. This deletes two words and puts you into insert mode.
+c2w
+
+# yank 2 words
+y2w
+
+# Transpose letters
+xp

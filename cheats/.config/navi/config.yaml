@@ -1,0 +1,13 @@
+style:
+  tag:
+    color: cyan
+    width_percentage: 15
+    min_width: 18
+  comment:
+    color: white
+    width_percentage: 50
+    min_width: 30
+  snippet:
+    color: blue
+    width_percentage: 10
+    min_width: 12
