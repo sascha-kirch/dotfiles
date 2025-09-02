@@ -1,0 +1,111 @@
+% regex[anchors]
+
+# Start of string or start of line
+^
+
+# Start of string
+\A
+
+# End of string or end of line
+$
+
+# End of string
+\Z
+
+# Word boundry
+\b
+
+# Not word boundry
+\B
+
+# Start of word
+\<
+
+# End of word
+\>
+
+% regex[quantifiers]
+
+# 0 or more
+*
+
+# 1 or more
++
+
+# 0 or 1
+?
+
+# Exactly 3
+{3}
+
+# 3 or more times
+{3,}
+
+# Minimum 3 times, maximum 5 times
+{3,5}
+
+
+% regex[classes]
+
+# Control Character
+\C
+
+# Tab
+\t
+
+# Carriage return
+\r
+
+# New line
+\n
+
+# Any white space
+\s
+
+# Not white space
+\S
+
+# digit
+\d
+
+# Not digit
+\D
+
+# word
+\w
+
+# Not word
+\W
+
+# Hex digit
+\x
+
+
+% regex[ranges]
+
+# Any character except new line (\n)
+.
+
+# a or b
+(a|b)
+
+# Group
+(...)
+
+# Passive (non-capturing) group
+(?...)
+
+# Range (a or b or c)
+[abc]
+
+# Not (a or b or c)
+[^abc]
+
+# Lower case letters from a to q
+[a-q]
+
+# Upper case letters from A to Q
+[A-Q]
+
+# Digit from 0-7
+[0-7]
