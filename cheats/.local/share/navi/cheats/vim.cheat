@@ -1,0 +1,34 @@
+% vim[windows]
+
+# Create vertical split
+ctrl-w + v
+
+# Create horizontal split
+ctrl-w + s
+
+# Move to another window
+ctrl-w + h/j/k/l
+
+# Close all but current window
+ctrl-w + o
+
+
+% vim[tabs]
+
+# Go to next tab
+gt
+
+# Go to previous tab
+gT
+
+# Go to tab at position i
+{i}gt
+
+
+% vim[jumping]
+
+# Jump to previous change (o like old)
+ctrl-o
+
+# Jump to newer change location
+ctrl-i

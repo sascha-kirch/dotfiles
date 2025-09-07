@@ -28,8 +28,20 @@ set clipboard=unnamed
 set ignorecase
 set smartcase
 set incsearch
+
 nnoremap <CR> :noh<CR><CR>:<backspace>
 
+" jump half page down and center cursor
+nnoremap <C-d> <C-d>zz 
+
+" jump half page up and center cursor
+nnoremap <C-u> <C-u>zz 
+
+" when jumping to the next search result with n, also center cursor vertically
+nnoremap n nzz
+
+" when jumping to the previous search result with N, also center cursor vertically
+nnoremap N Nzz
 
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
