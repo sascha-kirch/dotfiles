@@ -5,6 +5,7 @@ return {
     local config = require("nvim-treesitter.configs")
     config.setup({
       ensure_installed ={"c", "cpp", "vim", "lua", "markdown", "python", "rust", "bash"},
+      auto_install = true,
       highlight = {enable=true},
       indent = {enable = true},
     })
