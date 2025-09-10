@@ -26,5 +26,6 @@ vim.cmd("set scrolloff=8")
 vim.cmd("set noshowmode")
 vim.cmd("set splitbelow")
 vim.cmd("set splitright")
+vim.cmd("set nowrap")
 
 vim.g.mapleader = " "
