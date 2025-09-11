@@ -1,31 +1,37 @@
-vim.cmd("set number")
-vim.cmd("set relativenumber")
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set autoindent")
-vim.cmd("set smartindent")
-vim.cmd("set smarttab")
-vim.cmd("set noswapfile")
-vim.cmd("set nobackup")
-vim.cmd("set undodir=~/.vim/undodir")
-vim.cmd("set undofile")
-vim.cmd("set clipboard=unnamed")
-vim.cmd("set ignorecase")
-vim.cmd("set smartcase")
-vim.cmd("set incsearch")
-vim.cmd("set nocompatible")
-vim.cmd("set cursorline")
-vim.cmd("set showcmd")
-vim.cmd("set showmatch")
-vim.cmd("set hlsearch")
-vim.cmd("set history=1000")
-vim.cmd("set nobackup")
-vim.cmd("set scrolloff=8")
-vim.cmd("set noshowmode")
-vim.cmd("set splitbelow")
-vim.cmd("set splitright")
-vim.cmd("set nowrap")
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.opt.smartindent = true
+vim.opt.smarttab = true
+vim.opt.wrap = false
+vim.opt.scrolloff = 8
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.signcolumn = "yes"
+vim.opt.updatetime = 50
+
+vim.opt.incsearch = true
+vim.opt.cursorline = true
+vim.opt.showcmd = true
+vim.opt.showmatch = true
+vim.opt.hlsearch = true
+vim.opt.history = 1000
+vim.opt.showmode =false
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.clipboard = "unnamedplus"
+
+vim.opt.colorcolumn="120"
+vim.opt.termguicolors=true
 
 vim.g.mapleader = " "
