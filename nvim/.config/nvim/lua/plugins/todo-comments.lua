@@ -12,7 +12,7 @@
 -- BUG: oooh a bug!
 
 return {
-	"folke/todo-comments.nvim",
-	dependencies = { "nvim-lua/plenary.nvim" },
-	opts = { signs = true },
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = { signs = true },
 }
