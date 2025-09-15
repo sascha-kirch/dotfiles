@@ -1,9 +1,15 @@
 -- NOTE: See `:help vim.keymap.set()`
 
+-----------
+-- Search
+-----------
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-----------
+-- Terminal
+-----------
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
@@ -12,12 +18,26 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
+-- Open a small terminal at the bottom of the window
+-- vim.keymap.set("n", "<leader>ö", function()
+-- 	vim.cmd.vnew()
+-- 	vim.cmd.term()
+-- 	vim.cmd.windcmd("J")
+-- 	vim.api.nvim_win_set_height(0, 15)
+-- end, { desc = "Open small terminal at the bottom of the window." })
+
+-----------
+-- Movement
+-----------
 -- TIP: Disable arrow keys in normal mode
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
+-----------
+-- Windows
+-----------
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --
@@ -32,3 +52,10 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+
+-----------
+-- Quickfix
+-----------
+-- 'M' is the meta key => 'alt'
+vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", { desc = "Move to next item in quickfix list." })
+vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>", { desc = "Move to previous item in quickfix list." })
