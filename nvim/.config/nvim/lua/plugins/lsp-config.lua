@@ -33,6 +33,9 @@ return {
         },
         config = function()
             local lspconfig = require("lspconfig")
+            local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+
             -- TODO: move languge to individual directory
             lspconfig.lua_ls.setup({
                 settings = {
@@ -44,8 +47,11 @@ return {
                         diagnostics = { disable = { "missing-fields" } },
                     },
                 },
+                capabilities = capabilities,
             })
-			lspconfig.basedpyright.setup({})
+			lspconfig.basedpyright.setup({
+                capabilities = capabilities,
+            })
 
             -- following some example keymaps. for more info enter
             -- comand :help vim.lsp.buf
