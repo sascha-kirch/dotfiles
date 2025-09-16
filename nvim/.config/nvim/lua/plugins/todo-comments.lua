@@ -41,6 +41,6 @@ return {
         -----------------
 
         vim.keymap.set("n", "<leader>tl","<cmd>TodoQuickFix<CR>" , {desc="Show the [t]odo [l]ist"})
-        vim.keymap.set("n", "<leader>tf","<cmd>TodoTelescope<CR>" , {desc="Search todo list with telescope."})
+        vim.keymap.set("n", "<leader>st","<cmd>TodoTelescope<CR>" , {desc="Search todo list with telescope."})
     end
 }
