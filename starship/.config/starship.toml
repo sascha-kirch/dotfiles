@@ -5,6 +5,8 @@ format = """
 $container\
 $os\
 $username\
+[@](bg:red fg:crust)\
+$hostname\
 [](bg:peach fg:red)\
 $directory\
 [](bg:yellow fg:peach)\
@@ -65,9 +67,9 @@ format = '[ $user]($style)'
 [hostname]
 disabled = false
 ssh_only = false
-style = "bg:red fg:crust bold"
+style = "bg:red fg:crust"
 # format = '[ $ssh_symbol $hostname]($style)'
-format = '[ $hostname ]($style)'
+format = '[$hostname ]($style)'
 
 [directory]
 style = "bg:peach fg:crust"
