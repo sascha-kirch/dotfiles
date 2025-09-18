@@ -35,6 +35,11 @@ vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move half page down and center cursor." })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move half page up and center cursor." })
+
+vim.keymap.set("n", "n", "nzz", { desc = "Move to next search result and center cursor." })
+vim.keymap.set("n", "N", "Nzz", { desc = "Move to previous search result and center cursor." })
 -----------
 -- Windows
 -----------
