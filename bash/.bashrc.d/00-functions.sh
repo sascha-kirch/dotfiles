@@ -19,3 +19,17 @@ up () {
         echo "Couldn't go up $limit dirs.";
     fi
 }
+
+
+
+#############
+# conda
+#############
+# Remove multiple conda environments using fzf and xargs multiprocessing.
+rm_conda_envs () {
+    conda info --envs \
+        | sed -e '/#.*$/d' -e '/.*\/fs\/applications/d' \
+        | fzf --multi --style full --header "Select all environments to be deleted with <space> and confirm with <Enter>" \
+        | awk '{ print $1 }' \
+        | xargs -n 1 -P 10 -I {} bash -c "conda env remove -n {}"
+}
