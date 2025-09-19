@@ -31,5 +31,5 @@ rm_conda_envs () {
         | sed -e '/#.*$/d' -e '/.*\/fs\/applications/d' \
         | fzf --multi --style full --header "Select all environments to be deleted with <Tab> and confirm with <Enter>" \
         | awk '{ print $1 }' \
-        | xargs -n 1 -P 10 -I {} bash -c "echo '[{}] removing...' && conda env remove -n {} -y &> /dev/null && echo '[{}] removed.'"
+        | xargs -P 10 -I {} bash -c "echo '[{}] removing...' && conda env remove -n {} -y &> /dev/null && echo '[{}] removed.'"
 }
