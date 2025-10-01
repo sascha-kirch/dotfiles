@@ -7,7 +7,7 @@ if command -v zoxide &> /dev/null; then
 
 
     # --cmd cd replaces the cd command with zoxide's cd
-    # further adds the zi command, which shows a fzf menu of your most used directories
+    # further adds the cdi command, is an interactive version of cd showing a fzf menu of the most frequently used directories
     eval "$(zoxide init --cmd cd bash)"
 
 fi
