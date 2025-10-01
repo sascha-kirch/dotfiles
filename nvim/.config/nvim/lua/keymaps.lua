@@ -40,6 +40,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move half page up and center c
 
 vim.keymap.set("n", "n", "nzz", { desc = "Move to next search result and center cursor." })
 vim.keymap.set("n", "N", "Nzz", { desc = "Move to previous search result and center cursor." })
+
 -----------
 -- Windows
 -----------
@@ -64,3 +65,9 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- 'M' is the meta key => 'alt'
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", { desc = "Move to next item in quickfix list." })
 vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>", { desc = "Move to previous item in quickfix list." })
+
+
+-----------
+-- Insertions
+-----------
+vim.keymap.set("i", ";;", "<C-o>A;", { desc = "In insert mode, jump to end of line and insert ';'" })
