@@ -1,5 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# Configuration: https://starship.rs/config/
+
 format = """
 [](red)\
 $container\
