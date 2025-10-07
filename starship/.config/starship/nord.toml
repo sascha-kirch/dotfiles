@@ -1,0 +1,141 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[\u256D\u2574](fg:nord3)\
+$container\
+$os \
+$conda\
+$username\
+[ on ](fg:nord3)\
+$hostname\
+[in](fg:nord3)\
+$directory\
+$git_branch\
+$git_status\
+$c\
+$rust\
+$python\
+$fill\
+$time\
+$line_break\
+\
+[\u2570\u2574](fg:nord3)\
+$character"""
+
+palette = 'nord'
+
+[fill]
+style = 'fg:nord3'
+symbol = "\u2500"  # Unicode for a horizontal line. For no line, use ''.
+
+[os]
+disabled = false
+style = "fg:nord3"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bold fg:nord10"
+style_root = "bold fg:nord10"
+format = '[$user]($style)'
+
+[hostname]
+disabled = false
+ssh_only = false
+style = "bold fg:nord10"
+# format = '[ $ssh_symbol $hostname]($style)'
+format = '[$hostname ]($style)'
+
+[directory]
+style = "bold fg:nord9"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+format = '[on](fg:nord3) [$symbol $branch ](bold fg:nord8)'
+
+[git_status]
+format = '[($all_status$ahead_behind )](bold fg:nord8)'
+
+[time]
+disabled = false
+time_format = "%T"
+style = "fg:nord3"
+format = '[  $time]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[❯](fg:nord7)[❯](fg:nord9)[❯](fg:nord10)'
+error_symbol = '[✗](bold fg:nord11)'
+
+[palettes.nord]
+nord0 = '#2E3440'
+nord1 = '#3B4252'
+nord2 = '#434C5E'
+nord3 = '#4C566A'
+nord4 = '#D8DEE9'
+nord7 = '#8fbcbb'
+nord8 = '#88c0d0'
+nord9 = '#81a1c1'
+nord10 = '#5e81ac'
+nord11 = '#BF616A'
+nord12 = '#d08770'
+nord13 = '#EBCB8B'
+nord14 = '#A2BE8A'
+nord15 = '#b48ead'
+
+[c]
+symbol = " "
+style = "fg:nord7"
+format = '[with](fg:nord3) [$symbol( $version) ]($style)'
+
+[rust]
+symbol = ""
+style = "fg:nord7"
+format = '[with](fg:nord3) [$symbol( $version) ]($style)'
+
+[python]
+symbol = ""
+style = "fg:nord7"
+format = '[with](fg:nord3) [$symbol( $version)(\(#$virtualenv\)) ]($style)'
+
+[container]
+symbol = ""
+style = "fg:nord3"
+format = '[$symbol ]($style)'
+
+[docker_context]
+symbol = ""
+style = "fg:nord3"
+format = '[ $symbol( $context) ]($style)'
+
+[conda]
+symbol = ""
+style = "fg:nord3"
+format = '[\($symbol$environment\) ]($style)'
+ignore_base = false
