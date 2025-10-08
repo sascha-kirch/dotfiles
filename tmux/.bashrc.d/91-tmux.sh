@@ -13,7 +13,9 @@ if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
         # If not inside VSCode, do the following:
         # Run neofetch only when starting a new tmux session and redirect errors to /dev/null (e.g. not installed)
         # Otherwise, just run bash
-        tmux new-session -A -s main "neofetch 2> /dev/null; bash"
+        # tmux new-session -A -s main "neofetch 2> /dev/null; bash"
+
+        tmux new-session -A -s main
     fi
 
 fi
