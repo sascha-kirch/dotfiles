@@ -10,8 +10,6 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -----------
 -- Terminal
 -----------
--- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
--- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
 --
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
@@ -23,6 +21,8 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 -- 	vim.cmd.vnew()
 -- 	vim.cmd.term()
 -- 	vim.cmd.windcmd("J")
+-- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
+-- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- 	vim.api.nvim_win_set_height(0, 15)
 -- end, { desc = "Open small terminal at the bottom of the window." })
 
@@ -38,8 +38,12 @@ vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move half page down and center cursor." })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move half page up and center cursor." })
 
-vim.keymap.set("n", "n", "nzz", { desc = "Move to next search result and center cursor." })
-vim.keymap.set("n", "N", "Nzz", { desc = "Move to previous search result and center cursor." })
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Keeps the cursor at the current position when hitting 'J'."})
+vim.keymap.set("n", "n", "nzzzv", { desc = "Move to next search result and center cursor." })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Move to previous search result and center cursor." })
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move selected text up 1 row."})
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {desc = "Move selected text down 1 row."})
 
 -----------
 -- Windows
@@ -71,3 +75,14 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>", { desc = "Move to previous item i
 -- Insertions
 -----------
 vim.keymap.set("i", ";;", "<C-o>A;", { desc = "In insert mode, jump to end of line and insert ';'" })
+
+
+-----------
+-- Clipboard
+-----------
+vim.keymap.set("x", "<leader>p", "\"_dP", {desc = "Keep yanked data when pasting over selection."})
+
+-----------
+-- NoPs
+-----------
+vim.keymap.set("n", "Q", "<nop>")

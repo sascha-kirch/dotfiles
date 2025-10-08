@@ -103,3 +103,9 @@ vim.opt.history = 1000
 
 vim.opt.colorcolumn = "120"
 vim.opt.termguicolors = true
+
+-- transparent background
+vim.api.nvim_set_hl(0, 'Normal', {bg = 'none'})
+vim.api.nvim_set_hl(0, 'NormalFloat', {bg = 'none'})
+vim.api.nvim_set_hl(0, 'FloatBorder', {bg = 'none'})
+vim.api.nvim_set_hl(0, 'Pmenu', {bg = 'none'})
