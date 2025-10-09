@@ -3,7 +3,8 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "dracula",
+				theme = "catppuccin",
+				-- theme = "dracula",
 
 				-- enable global statusline (have a single statusline
 				-- at bottom of neovim instead of one for  every window).
