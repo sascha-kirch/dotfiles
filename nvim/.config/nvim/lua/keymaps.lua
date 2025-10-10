@@ -86,3 +86,14 @@ vim.keymap.set("x", "<leader>p", "\"_dP", {desc = "Keep yanked data when pasting
 -- NoPs
 -----------
 vim.keymap.set("n", "Q", "<nop>")
+
+
+-----------
+-- Terminal
+-----------
+vim.keymap.set("n", "<space>ter", function()
+    vim.cmd.vnew()
+    vim.cmd.term()
+    vim.cmd.wincmd("J")
+    vim.api.nvim_win_set_height(0, 10)
+end, {desc="Open small terminal at the bottom of the buffer"})
