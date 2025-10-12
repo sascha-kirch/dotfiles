@@ -75,6 +75,9 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>", { desc = "Move to previous item i
 -- Insertions
 -----------
 vim.keymap.set("i", ";;", "<C-o>A;", { desc = "In insert mode, jump to end of line and insert ';'" })
+vim.keymap.set("n", "<leader>o", "o<ESC>k", { desc = "Add an empty line bellow current line" })
+vim.keymap.set("n", "<leader>O", "O<ESC>j", { desc = "Add an empty line above current line" })
+
 
 
 -----------
