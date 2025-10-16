@@ -11,3 +11,5 @@ alias duh='du -h --max-depth=1 . | sort -hr'
 
 # ruff python linter & formatter
 alias myruff='ruff format -q --force-exclude --exclude "*.ipynb" && ruff check --fix -q -e --output-format grouped && ruff check --statistics -q'
+
+alias wttr='curl wttr.in'
