@@ -1,5 +1,5 @@
 
-# Change this to switch themes
+# Change this to switch themes [nord | catppuccin]
 export STARSHIP_THEME="nord"
 
 # Do not change

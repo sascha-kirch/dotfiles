@@ -1,0 +1,9 @@
+# Files and directories to ignore when stowing this repo.
+# Patterns are relative to the package root.
+assets
+assets/*
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
