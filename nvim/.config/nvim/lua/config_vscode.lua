@@ -9,5 +9,5 @@ require("autocmds")
 -- In vscode, we need to show the mode since the statusline is not visible all the time
 vim.o.showmode = true
 
-local vscode = require("vscode")
-vscode.notify("Neovim is running inside VSCode", "info", { title = "vscode-neovim" })
+-- local vscode = require("vscode")
+-- vscode.notify("Neovim is running inside VSCode", "info", { title = "vscode-neovim" })
