@@ -7,6 +7,7 @@ format = """
 $container\
 $os \
 $conda\
+$pixi\
 $username\
 [ on ](fg:nord3)\
 $hostname\
@@ -54,6 +55,10 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+
+[pixi]
+format = '[$symbol(\($environment\) )]($style)'
+style = 'fg:nord3'
 
 [username]
 show_always = true
