@@ -57,7 +57,7 @@ Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
 [pixi]
-format = '[$symbol(\($environment\) )]($style)'
+format = '[($symbol\($environment\) )]($style)'
 style = 'fg:nord3'
 
 [username]
