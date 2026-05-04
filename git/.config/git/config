@@ -13,6 +13,9 @@
 [diff]
     tool = vimdiff
     colorMoved = default
+[merge]
+    tool = vimdiff
+    conflictstyle = zdiff3
 [alias]
     ammend = commit --amend --no-edit
     unstage = reset HEAD --
@@ -21,3 +24,8 @@
     prune = true
     pruneTags = true
     all = true
+[status]
+    short = true
+    branch = true
+    aheadBehind = true
+    showStash = true
