@@ -1,0 +1,23 @@
+[credential]
+    helper = store
+[core]
+    editor = vim
+    pager = less -F -X
+[init]
+    defeultBranch = main
+[pull]
+    rebase = true
+[push]
+    default = simple
+    autoSetupRemote = true
+[diff]
+    tool = vimdiff
+    colorMoved = default
+[alias]
+    ammend = commit --amend --no-edit
+    unstage = reset HEAD --
+    lg = log --graph --decorate --oneline --all --date=relative
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
