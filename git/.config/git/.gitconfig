@@ -1,0 +1,12 @@
+[credential]
+    helper = store
+[core]
+    editor = vim
+    pager = less
+[init]
+    defeultBranch = main
+[pull]
+    rebase = true
+[push]
+    default = simple
+    autoSetupRemote = true
