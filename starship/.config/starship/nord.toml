@@ -23,6 +23,7 @@ $time\
 $line_break\
 \
 [\u2570\u2574](fg:nord3)\
+$status\
 $character"""
 
 palette = 'nord'
@@ -99,6 +100,14 @@ disabled = false
 disabled = false
 success_symbol = '[❯](fg:nord7)[❯](fg:nord9)[❯](fg:nord10)'
 error_symbol = '[✗](bold fg:nord11)'
+
+[status]
+disabled = false
+symbol = ""
+style = " fg:nord11"
+format = '[\($status\)]($style)'
+pipestatus = true
+pipestatus_separator = "|"
 
 [palettes.nord]
 nord0 = '#2E3440'
